@@ -31,7 +31,7 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/">Doctors</a>
+                <a href="/doctors">Doctors</a>
             </li>
             <li>
                 <a href="/">Departments</a>
