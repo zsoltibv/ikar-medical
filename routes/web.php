@@ -3,6 +3,7 @@
 use App\Mail\EmailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ScraperController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +20,6 @@ Route::get('/', function () {
     return view('master');
 });
 
-Route::get('/doctors', function(){
-    return view('doctors');
-});
+Route::get('/doctors', [ScraperController::class, 'scraper'])->name('scraper');
 
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');

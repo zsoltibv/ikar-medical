@@ -10,36 +10,13 @@
             </button>
         </div>
         <div class="grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 lg:gap-x-12 gap-x-5 gap-y-5 lg:pl-6">
-            <div class="dep-1 max-w-80 bg-blue-800">
-                <img src="/img/doc-1.webp" alt="">
-                <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">Abdulvahap DOĞAN</h2>
-                <p class="text-white px-6 pt-3 pb-4">Internal diseases</p>
-            </div>
-            <div class="dep-2 max-w-80 bg-blue-800">
-                <img src="/img/doc-2.webp" alt="">
-                <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">Cengizhan EKİZCELİ</h2>
-                <p class="text-white px-6 pt-3 pb-4">Plastic Surgery</p>
-            </div>
-            <div class="dep-3 max-w-80 bg-blue-800">
-                <img src="/img/doc-3.webp" alt="">
-                <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">Nermin <br>BAHAT</h2>
-                <p class="text-white px-6 pt-3 pb-4">Dermatology</p>
-            </div>
-            <div class="dep-4 max-w-80 bg-blue-800">
-                <img src="/img/doc-4.webp" alt="">
-                <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">Hüseyin KADIOĞLU</h2>
-                <p class="text-white px-6 pt-3 pb-4">General Surgery</p>
-            </div>
-            <div class="dep-4 max-w-80 bg-blue-800">
-                <img src="/img/doc-5.webp" alt="">
-                <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">Fatma <br>AYGÜN</h2>
-                <p class="text-white px-6 pt-3 pb-4">Oftalmology</p>
-            </div>
-            <div class="dep-4 max-w-80 bg-blue-800">
-                <img src="/img/doc-6.webp" alt="">
-                <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">Mustafa Ahmet HUYUT</h2>
-                <p class="text-white px-6 pt-3 pb-4">Cardiology</p>
-            </div>
+            @foreach($name as $key => $value)
+                <div class="dep-1 max-w-80 bg-blue-800">
+                    <img src="https://bhtclinic.com.tr{{$pic_path[$key]}}" alt="">
+                    <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">{{$name[$key]}}</h2>
+                    <p class="text-white px-6 pt-3 pb-4">{{$area[$key]}}</p>
+                </div>
+            @endforeach
         </div>
     </div>
 </div>
