@@ -16,10 +16,16 @@ use App\Http\Controllers\ScraperController;
 |
 */
 
-Route::get('/', function () {
-    return view('master');
-});
+Route::redirect('/', '/en');
+Route::redirect('/doctors', '/en/doctors');
 
-Route::get('/doctors', [ScraperController::class, 'scraper'])->name('scraper');
+Route::group(['prefix' => '{language}'], function (){
+
+    Route::get('/', function () {
+        return view('master');
+    })->name('home');
+
+    Route::get('/doctors', [ScraperController::class, 'scraper'])->name('doctors');
+});
 
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
