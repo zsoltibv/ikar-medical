@@ -10,6 +10,7 @@ class ScraperController extends Controller
     private $results = array();
     private $pic_path = array();
     private $counter = 0;
+    private $unique_area = array();
 
     public function scraper(){
         $client = new Client();
@@ -32,12 +33,14 @@ class ScraperController extends Controller
             $this->results3[$this->counter++] = $item->filter('span')->text();
         });
 
+        $unique_area = array_unique($this->results3);
+
         $name = $this->results;
         $pic_path = $this->results2;
         $area = $this->results3;
 
-        // dd($area);
+        // dd($unique_area);
 
-        return view('doctors', compact('name', 'pic_path', 'area'));
+        return view('doctors', compact('name', 'pic_path', 'area', 'unique_area'));
     }
 }

@@ -5,14 +5,6 @@
         </slider-component>
     </div>
     {{-- About --}}
-    <ul class="mr-2">
-        <li>
-            <a href="{{ route(Route::currentRouteName(), 'ro') }}" class="">RO</a>
-        </li>
-         <li>
-            <a href="{{ route(Route::currentRouteName(), 'en') }}" class="">EN</a>
-        </li>
-      </ul>
     <div class="about container mx-auto py-12 px-4 font-body text-md font-medium flex">
         <div class="first-el w-2/3">
             <h3 class="font-heading font-semibold text-4xl text-gray-800 py-4">{{ __('About Us') }}</h3>

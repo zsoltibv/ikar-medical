@@ -10,12 +10,15 @@
             </button>
         </div>
         <div class="grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 lg:gap-x-12 gap-x-5 gap-y-5 lg:pl-6">
+            @php ($category = $unique_area[0])
             @foreach($name as $key => $value)
-                <div class="dep-1 max-w-80 bg-blue-800">
-                    <img src="https://bhtclinic.com.tr{{$pic_path[$key]}}" alt="">
-                    <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">{{$name[$key]}}</h2>
-                    <p class="text-white px-6 pt-3 pb-4">{{__($area[$key])}}</p>
-                </div>
+                {{-- @if($area[$key] == $category) --}}
+                    <div class="dep-1 max-w-80 bg-blue-800">
+                        <img src="https://bhtclinic.com.tr{{$pic_path[$key]}}" alt="">
+                        <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20">{{$name[$key]}}</h2>
+                        <p class="text-white px-6 pt-3 pb-4">{{__($area[$key])}}</p>
+                    </div>
+                {{-- @endif --}}
             @endforeach
         </div>
     </div>
