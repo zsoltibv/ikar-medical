@@ -33,13 +33,13 @@ class ScraperController extends Controller
         });
 
         $this->counter = 0;
-
-        $this->results3[$this->counter++] = 'All Areas';
+        
         $page->filter('.area')->each(function($item){
             $this->results3[$this->counter++] = $item->filter('span')->text();
         });
 
         $unique_area = array_unique($this->results3);
+        array_unshift($unique_area , 'All Areas');
         $name = $this->results;
         $pic_path = $this->results2;
         $area = $this->results3;

@@ -8,7 +8,7 @@
                     </option>
             </select>
         </div>
-        <div class="grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 lg:gap-x-12 gap-x-5 gap-y-5 lg:pl-6">
+        <div class="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 lg:gap-x-12 gap-x-5 gap-y-5 lg:pl-6">
            <div v-for="(name, index) in names" :key="index" v-show="($t(area[index]) == $t(areaSelected)) || (areaSelected == 'All Areas')">
                 <div class="card-container max-w-80 bg-blue-800 h-full">
                     <img v-bind:src="'https://bhtclinic.com.tr' + picPath[index]" alt="">
