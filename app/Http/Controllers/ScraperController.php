@@ -34,6 +34,7 @@ class ScraperController extends Controller
 
         $this->counter = 0;
 
+        $this->results3[$this->counter++] = 'All Areas';
         $page->filter('.area')->each(function($item){
             $this->results3[$this->counter++] = $item->filter('span')->text();
         });

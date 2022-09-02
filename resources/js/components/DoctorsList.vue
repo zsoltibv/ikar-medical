@@ -3,7 +3,6 @@
         <div class="heading flex justify-between w-full">
             <h3 class="font-heading font-semibold text-4xl text-gray-800 pb-8">{{$t('Doctors')}}</h3>
             <select v-model="areaSelected" class="h-min p-2 border-2 border-gray-300">
-                    <option :value="$t(areaSelected)" disabled selected>{{areaSelected}}</option>
                     <option :value="$t(unique_area)" v-for="(unique_area, index) in unique_areas" :key="index">
                         {{$t(unique_area)}}
                     </option>
