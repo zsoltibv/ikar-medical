@@ -28,4 +28,6 @@ Route::group(['prefix' => '{language}'], function (){
     Route::get('/doctors', [ScraperController::class, 'scraper'])->name('doctors');
 });
 
+Route::get('/get', [ScraperController::class, 'get'])->name('locale.get');
+
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');

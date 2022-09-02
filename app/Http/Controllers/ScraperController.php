@@ -4,13 +4,18 @@ namespace App\Http\Controllers;
 
 use Goutte\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ScraperController extends Controller
 {
     private $results = array();
-    private $pic_path = array();
+    private $results2 = array();
+    private $results3 = array();
     private $counter = 0;
-    private $unique_area = array();
+
+    public function get(){
+        return app()->getLocale();
+    }
 
     public function scraper(){
         $client = new Client();
@@ -34,12 +39,9 @@ class ScraperController extends Controller
         });
 
         $unique_area = array_unique($this->results3);
-
         $name = $this->results;
         $pic_path = $this->results2;
         $area = $this->results3;
-
-        // dd($unique_area);
 
         return view('doctors', compact('name', 'pic_path', 'area', 'unique_area'));
     }

@@ -4,8 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import './bootstrap';
-import { createApp } from 'vue';
+import "./bootstrap";
+import { createApp } from "vue";
+import { i18nVue } from "laravel-vue-i18n";
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -14,12 +15,16 @@ import { createApp } from 'vue';
  */
 
 const nav = createApp({});
-import NavbarComponent from './components/NavbarComponent.vue';
-nav.component('NavbarComponent', NavbarComponent);
+import NavbarComponent from "./components/NavbarComponent.vue";
+nav.component("NavbarComponent", NavbarComponent);
 
 const slider = createApp({});
-import SliderComponent from './components/SliderComponent.vue';
-slider.component('SliderComponent', SliderComponent);
+import SliderComponent from "./components/SliderComponent.vue";
+slider.component("SliderComponent", SliderComponent);
+
+const doctorsList = createApp({});
+import DoctorsList from "./components/DoctorsList.vue";
+doctorsList.component("DoctorsList", DoctorsList);
 
 /**
  * The following block of code may be used to automatically register your
@@ -39,5 +44,14 @@ slider.component('SliderComponent', SliderComponent);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-nav.mount('#navbar');
-slider.mount('#slider');
+var pathname = window.location.pathname; //Your page path
+var language = pathname.split('/')[1]; //The page name
+
+nav.mount("#navbar");
+slider.mount("#slider");
+doctorsList
+    .use(i18nVue, {
+        lang: language,
+        resolve: (lang) => import(`../lang/${lang}.json`),
+    })
+    .mount("#doctors-list");
