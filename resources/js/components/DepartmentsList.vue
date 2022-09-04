@@ -12,11 +12,13 @@
            <div v-for="(category, index) in categories" :key="index">
                 <div class="card-container max-w-80 border-2 h-full">
                     <div class="heading bg-blue-800">
-                        <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20 pb-6">{{category}}</h2>
+                        <h2 class="font-heading text-xl text-white px-6 pt-6 min-h-20 pb-6">{{$t(category)}}</h2>
                     </div>
                     <div v-for="(content, index2) in contents[index]" :key="index2" 
-                        class="content bg-white flex items-center pt-2">
-                        <p class="text-black px-6 pt-1 pb-4 border-white">{{content}}</p>
+                        class="content bg-white flex items-center pt-2 pb-2">
+                        <p class="text-black px-6 pt-1 border-white font-medium">
+                            <a href="">{{$t(content)}}</a>
+                        </p>
                     </div>
                 </div>
             </div>
