@@ -30,6 +30,4 @@ Route::group(['prefix' => '{language}'], function (){
     Route::get('/departments', [ScraperController2::class, 'scraper'])->name('departments');
 });
 
-Route::get('/get', [ScraperController::class, 'get'])->name('locale.get');
-
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');

@@ -66,3 +66,4 @@ departmentsList
         resolve: (lang) => import(`../lang/${lang}.json`),
     })
     .mount("#departments-list");
+

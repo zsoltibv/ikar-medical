@@ -2,10 +2,6 @@
 
 @section('content')
 
-{{-- @foreach ($name as $key => $data)
-    {{$data}}
-@endforeach --}}
-
 <div id="doctors-list">
     <doctors-list
         :name = "{{json_encode($name)}}"
