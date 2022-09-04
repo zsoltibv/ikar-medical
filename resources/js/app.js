@@ -26,6 +26,10 @@ const doctorsList = createApp({});
 import DoctorsList from "./components/DoctorsList.vue";
 doctorsList.component("DoctorsList", DoctorsList);
 
+const departmentsList = createApp({});
+import DepartmentsList from "./components/DepartmentsList.vue";
+departmentsList.component("DepartmentsList", DepartmentsList);
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -55,3 +59,10 @@ doctorsList
         resolve: (lang) => import(`../lang/${lang}.json`),
     })
     .mount("#doctors-list");
+
+departmentsList
+    .use(i18nVue, {
+        lang: language,
+        resolve: (lang) => import(`../lang/${lang}.json`),
+    })
+    .mount("#departments-list");

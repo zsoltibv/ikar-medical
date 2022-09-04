@@ -4,6 +4,7 @@ use App\Mail\EmailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ScraperController;
+use App\Http\Controllers\ScraperController2;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,6 @@ use App\Http\Controllers\ScraperController;
 */
 
 Route::redirect('/', '/en');
-Route::redirect('/doctors', '/en/doctors');
 
 Route::group(['prefix' => '{language}'], function (){
 
@@ -26,6 +26,8 @@ Route::group(['prefix' => '{language}'], function (){
     })->name('home');
 
     Route::get('/doctors', [ScraperController::class, 'scraper'])->name('doctors');
+
+    Route::get('/departments', [ScraperController2::class, 'scraper'])->name('departments');
 });
 
 Route::get('/get', [ScraperController::class, 'get'])->name('locale.get');
