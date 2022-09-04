@@ -17,15 +17,16 @@ class ScraperController2 extends Controller
         $page = $client->request('GET', $url);
 
         $page->filter('.ud-page-medical-units-section-main-item')->each(function($item){
-            $this->counter2 = 0;
+            $this->counter = 0;
             $item->filter('li a')->each(function($item2){
-                $this->results[$this->counter][$this->counter2++] = trans($item2->text());
+                $this->results[ord(trans($item2->text())[0])][$this->counter++] = trans($item2->text());
             });
+
             $this->counter++;
         });
 
         $content = $this->results;
-        $content = collect($content)->sortKeys()->toArray();
+        $content = collect($content)->sortKeys();
         
         // dd($content);
 
