@@ -18,7 +18,7 @@
                 <a href="/en/doctors">Doctors</a>
             </li>
             <li>
-                <a href="/ro/departments">Departments</a>
+                <a href="/en/departments">Departments</a>
             </li>
             <li>
                 <a href="/">Appointments</a>
