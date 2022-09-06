@@ -13,7 +13,7 @@
                 <option
                     :value="index"
                     v-for="(content, index) in contents"
-                    :key="index"
+                    :key="convertToChar(index)"
                 >
                     {{ convertToChar(index) }}
                 </option>

@@ -29,7 +29,7 @@
     "Fizik Tedavi ve Rehabilitasyon": "Kinetoterapie și reabilitare",
     "Psikiyatri": "Psihiatrie",
     "Çocuk Kardiyolojisi": "Cardiologie pediatrică",
-    "Neonatoloji": "Neonatologi",
+    "Neonatoloji": "Neonatologie",
     "Acil Servis": "Urgență",
     "Geleneksel ve Tamamlayıcı Tıp": "Medicina traditionala si complementara",
     "Ağız ve Diş Hastalıkları": "Boli bucale și dentare",
@@ -38,5 +38,13 @@
     "Göğüs Hastalıkları": "Boli toracice",
     "Biyokimya": "Biochimie",
     "Radyoloji": "Radiologie",
-    "Çocuk Cerrahisi": "Chirurgie pediatrică"
+    "Çocuk Cerrahisi": "Chirurgie pediatrică",
+    "Çocuk Psikiyatrisi": "Psihiatrie Infantilă",
+    "Yoğun Bakım": "Terapie Intensivă",
+    "Tüp Bebek Merkezi (IVF)": "Centrul FIV (FIV)",
+    "Çocuk Endokrinolojisi": "Endocrinologie pediatrică",
+    "Romatoloji": "Reumatologie",
+    "Endometriozis Merkezi": "Centrul de endometrioză",
+    "Kalp ve Damar Cerrahisi": "Chirurgie cardiacă",
+    "Nefroloji": "Nefrologie"
 }
