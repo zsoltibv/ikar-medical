@@ -2,7 +2,7 @@
     <div class="container mx-auto h-fit-content px-4">
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 space-y-6 text-white py-24">
             <div class="grid-1 flex justify-center flex-col items-start">
-                <img src="/img/logo-white.svg" alt="" class="h-12">
+                <img src="/img/logo-white.png" alt="" class="h-12">
                 <p class="font-body text-lg font-semibold mt-6 leading-5">
                     Str. Zizinului nr. 641 <br> Tarlungeni, jud. Brasov
                 </p>

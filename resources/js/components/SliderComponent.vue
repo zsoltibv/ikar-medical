@@ -5,7 +5,7 @@
             <div class="slide-1 flex items-center bg-blue-800 lg:flex-row flex-col-reverse" 
                 v-if="slideIndex == 0">
                 <div class="slide-content lg:w-1/2 w-full flex flex-col px-10 sm:pt-0 sm:pb-0 pt-5 pb-5">
-                    <h3 class="text-white font-medium md:text-5xl text-2xl font-heading leading-tight">
+                    <h3 class="text-white font-medium xl:text-4xl md:text-2xl text-2xl font-heading leading-tight">
                         Externalized Medical Services in of Turkey's best hospitals
                     </h3>
                     <p class="text-lg text-gray-300 mt-6">BHT CLINIC Istanbul academic staff, technological equipment and patient/employee oriented
@@ -28,7 +28,7 @@
             <div class="slide-2 flex items-center bg-blue-800 lg:flex-row flex-col-reverse" 
                 v-if="slideIndex == 1">
                 <div class="slide-content lg:w-1/2 w-full flex flex-col px-10 sm:pt-0 sm:pb-0 pt-5 pb-5">
-                    <h3 class="text-white font-medium md:text-5xl text-2xl font-heading leading-tight">
+                    <h3 class="text-white font-medium md:text-4xl text-2xl font-heading leading-tight">
                         Modern facilities and acknowledged doctors
                     </h3>
                     <p class="text-lg text-gray-300 mt-6">BHT CLINIC Istanbul academic staff, technological equipment and patient/employee oriented

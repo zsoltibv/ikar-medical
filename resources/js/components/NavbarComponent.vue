@@ -5,7 +5,7 @@
         class="navbar container mx-auto py-2 md:py-4 flex justify-between items-center px-4"
       >
         <a href="/" class="overflow-hidden">
-          <img src="/img/logo.svg" class="logo md:h-12 h-11" alt="" />
+          <img src="/img/logo-blue.png" class="logo md:h-12 h-11" alt="" />
         </a>
         <div class="menu overflow-hidden">
           <ul
