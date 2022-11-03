@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/zsoltibv/ikar-medical/main/public/img/hero.png" alt="accessibility text">
+  <img src="https://github.com/zsoltibv/ikar-medical/tree/main/public/img/hero.png" alt="accessibility text">
 </p>
 
 ## About the project
@@ -9,7 +9,7 @@ Presentation site made for a client with Laravel PHP and VueJS.
 
 - General Presentation of medical department
 - Scrape Doctor and Department info from https://bhtclinic.com.tr/ site
-- Filter doctors and departments list base on tags
+- Filter doctors and departments list based on tags
 - Contact Form
 ## Installation
 
