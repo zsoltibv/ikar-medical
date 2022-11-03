@@ -4,7 +4,7 @@
 
 ## About the project
 
-Presentation site made for a client with Laravel PHP and VueJS.
+Presentation site made with Laravel PHP and VueJS.
 ## Features
 
 - General Presentation of medical department
