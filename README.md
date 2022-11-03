@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/zsoltibv/ikar-medical/blob/main/public/img/hero.png" alt="accessibility text">
+  <img src="https://github.com/zsoltibv/ikar-medical/raw/main/public/img/hero.png" alt="accessibility text">
 </p>
 
 ## About the project
